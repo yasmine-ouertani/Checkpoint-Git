@@ -1,0 +1,118 @@
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again
+$ cd learn_git_again
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again
+$ touch third.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again
+$ git init
+Initialized empty Git repository in C:/learn_git_again/.git/
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git add .
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) b961202] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git log
+commit b961202325b610d57cb7e09038c2380969e30785 (HEAD -> master)
+Author: yasmine <yasmine21ouertani@gmail.com>
+Date:   Wed Feb 17 15:30:59 2021 +0100
+
+    adding third.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ touch fourth.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git add .
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git log
+commit b961202325b610d57cb7e09038c2380969e30785 (HEAD -> master)
+Author: yasmine <yasmine21ouertani@gmail.com>
+Date:   Wed Feb 17 15:30:59 2021 +0100
+
+    adding third.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git commit -m "adding fourth.txt"
+[master 6a81d78] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git rm third.txt
+rm 'third.txt'
+
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git add .
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git commit -m"removing third.txt"
+[master b8c293c] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git log
+commit b8c293c373f52de55bdbc6cde517cc09719ccfa2 (HEAD -> master)
+Author: yasmine <yasmine21ouertani@gmail.com>
+Date:   Wed Feb 17 15:44:52 2021 +0100
+
+    removing third.txt
+
+commit 6a81d7874eacb28c543d36f3fdedef3d023eaa4a
+Author: yasmine <yasmine21ouertani@gmail.com>
+Date:   Wed Feb 17 15:41:31 2021 +0100
+
+    adding fourth.txt
+
+commit b961202325b610d57cb7e09038c2380969e30785
+Author: yasmine <yasmine21ouertani@gmail.com>
+Date:   Wed Feb 17 15:30:59 2021 +0100
+
+    adding third.txt
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git config --global core.pager cat
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git config--list
+git: 'config--list' is not a git command. See 'git --help'.
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=yasmine21ouertani@gmail.com
+user.name=yasmine
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+
+Yasmine@Yasmine-PC MINGW64 /c/learn_git_again (master)
+$ git config --global
